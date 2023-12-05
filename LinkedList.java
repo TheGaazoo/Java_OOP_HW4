@@ -11,7 +11,7 @@ public class LinkedList<T> {
             next = null;
         }
     }
-
+    //Вставка в начало списка
     public void insertAtBeginning(T data) {
         Node newNode = new Node(data);
         if (head == null) {
@@ -22,7 +22,7 @@ public class LinkedList<T> {
         }
         size++;
     }
-
+    //Вставка в конец списка
     public void insertAtEnd(T data) {
         Node newNode = new Node(data);
         if (head == null) {
@@ -36,11 +36,11 @@ public class LinkedList<T> {
         }
         size++;
     }
-
+    //Получаем размер списка
     public int getSize() {
         return size;
     }
-
+    //Выводим элемент соответствующий индексу
     public T getElementAtIndex(int index) {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException();
